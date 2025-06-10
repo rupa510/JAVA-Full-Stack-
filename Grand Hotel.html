@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Hotel</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+header {
+    background: url('hotel.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 8px;
+    position: sticky;
+    
+}
+
+nav h1 {
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content h2 {
+    font-size: 50px;
+}
+
+.content p {
+    font-size: 30px;
+}
+
+section {
+    padding: 50px 40px;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 60px;
+    border-radius: 10px;
+}
+
+.Services-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    
+}
+
+.Services {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.Services img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+   
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 40px;
+    
+}
+
+.gallery-images img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+}
+
+    </style>
+    
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>Grand Hotel</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Bookings">Bookings</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h2>Welcome to Grand Hotel</h2>
+            <p>Book your room now</p>
+            
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Grand Hotel offers premium rooms, exquisite dining, and world-class hospitality. Located in the heart of the city, we ensure a memorable stay for every guest.</p>
+    </section>
+
+    <section id="Services">
+        <h2>Our Services</h2>
+        <div class="Services-list">
+            <div class="Services">
+                <img src="https://th.bing.com/th/id/OIP.W1K3g6XzdlfoWAq4hsDSCQHaEK?r=0&rs=1&pid=ImgDetMain" alt="Deluxe Room">
+                <h3>Luxury Rooms</h3>
+                
+            </div>
+            <div class="Services">
+                <img src="https://th.bing.com/th/id/OIP._zpDK0jvAGQnrSXYh5Y0XQHaE8?r=0&rs=1&pid=ImgDetMain" alt="Executive Room">
+                <h3>Delicious Food</h3>
+                
+            </div>
+            <div class="Services">
+                <img src="https://th.bing.com/th/id/OIP.W2ln8YPoo6wjHUkl3Zw0NQHaFj?r=0&rs=1&pid=ImgDetMain" alt="Executive Room">
+                <h3>Swimming Pools</h3>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="Bookings">
+        <h2>Bookings</h2>
+        <form>
+            <input type="text"placeholder="First Name" style="border:1px solid" >
+            <input type="text"placeholder="Last Name"style="border:1px solid"><br>
+            <input type="email"placeholder="Email"style="border:1px solid">
+            <input type="number"placeholder="Contact Number"style="border:1px solid"><br>
+            <label style="font-family: Arial, Helvetica, sans-serif;font-size: small;">Room Type</label>
+            <select style="border:1px solid">
+                <option value="AC Room">AC Room</option>
+                <option value="Non AC Room">AC Room</option>
+                <option value="Premium AC Room">Premium AC Room</option>
+                <option value="Premium Non AC Room">Premium Non AC Room</option>
+
+            </select><br>
+            <label style="font-family: Arial, Helvetica, sans-serif;font-size: small;">No of Guests</label>
+            <input type="number"placeholder="eg 2 or 3 or 4"style="border:1px solid"><br>
+            <label style="font-family: Arial, Helvetica, sans-serif;font-size: small;">Departure Date</label>
+            <input type="date"><br>
+            <input type="submit">
+            
+
+        </form>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+            <img src="https://th.bing.com/th/id/OIP.M40KLxN5lBhbCYT9wrTBLAHaE8?r=0&rs=1&pid=ImgDetMain" alt="Lobby">
+            <img src="https://th.bing.com/th/id/OIP.IgX5a9ioHOnR0yrBSQPakQHaFE?r=0&rs=1&pid=ImgDetMain" alt="Swimming Pool">
+            <img src="https://th.bing.com/th/id/OIP.ewiPq1XmB9Yp03uMPHsRqAHaEr?r=0&rs=1&pid=ImgDetMain" alt="Dining Area">
+            <img src="https://media.architecturaldigest.com/photos/5ab937722589ce07049dd4d5/master/w_1600%2Cc_limit/5%252520Hotel%252520Central%252520Park.jpg" alt="Dining Area">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email:<a href="">grandhotel@gmail.com</a></p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Address: Grand Hotel, Hyderabad</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Grand Hotel. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
