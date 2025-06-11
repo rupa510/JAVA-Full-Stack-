@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body ><h1>Registration Form</h1>
+    <form>
+        <label placeholder="First Name">First Name</label>
+        <input type="text"autofocus><br>
+        <label placeholder="Last Name">LastName</label>
+        <input type="text"><br>
+        <label placeholder="email">Email<span style="color:red">*</span></label>
+        <input type="email"><br>
+        <label placeholder="Password">Password</label>
+        <input type="password"><br>
+        <label>Phone Number</label>
+        <input type="number"><br>
+        <label>DOB</label>
+        <input type="date"><br>
+        <label>Gender:</label>
+        <input type="radio"id="1"name="xx">
+        <label for="1">Male</label>
+        <input type="radio"id="2"name="xx">
+        <label for="2">Female</label>
+        <input type="radio"id="3"name="xx">
+        <label for="3">Others</label><br>
+        <label>Select Language</label>
+        <select>
+            <option value="html">html</option>
+            <option value="CSS">CSS</option>
+            <option value="java">java</option>
+            <option value="js">js</option>
+        </select><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
